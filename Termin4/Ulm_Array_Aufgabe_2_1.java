@@ -9,7 +9,7 @@ public class Ulm_Array_Aufgabe_2_1
         // Deklaration und Initialisierung des Scanners
         Scanner scan = new Scanner(System.in);
         /* Ausgabe des Textes auf der Konsole. 
-         * Die Verwendung von print statt printl sorgt dafür, 
+         * Die Verwendung von print statt println sorgt dafür, 
          * dass der Text und der Input des Users in einer Zeile stehen. */
         System.out.print("Amount of values: ");
         /* Eingabe eines Integer-Werts über den Scanner und speichern 
@@ -30,7 +30,7 @@ public class Ulm_Array_Aufgabe_2_1
         }
         // Deklaration einer Hilfsvariable und Initialisierung mit "0"
         double sum = 0;
-        // Schrittweises druchgehen des Arrays und Aufaddierung der Summe
+        // Schrittweises druchgehen des Arrays
         for(int i=0; i<values.length; i++) {
             // Aufaddieren der i-ten Stelle des Arrays auf die Summe
             sum += values[i];

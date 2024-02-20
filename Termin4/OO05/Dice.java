@@ -15,7 +15,7 @@ public class Dice {
     }
 
     /* Getter Methode des Attributs "id" 
-       Notwendig, da "id" privat ist und ohne diesen nicht von 
+       Notwendig, da "id" privat ist und ohne diesen Getter nicht von 
        außerhalb der Klasse ausgelesen werden könnte */
     public int getId() {
         return id;

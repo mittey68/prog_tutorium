@@ -7,11 +7,11 @@ public class DiceCup {
         // for-Schleife durch die ArrayList
         for (int i = 0; i < dices.size(); i++) {
             /* Erstellen einer Hilfsvariable des Typs "Dice" und Bennenung dieser mit "dice" 
-               Speichern der i-ten Stelle der ArrayList, welche übergeben wurde, in die Hilfsvariable*/
+               Speichern der i-ten Stelle der ArrayList, welche übergeben wurde, in die Hilfsvariable */
             Dice dice = dices.get(i);
             // Aufrufen der rollTheDice-Methode des eben gespeicherten Würfels (siehe Klasse Dice)
             dice.rollTheDice();
-            // Konsolenausgabe mithilfe der Getter aus der Dice-Klasse
+            // Konsolenausgabe mithilfe der programmierten Getter aus der Dice-Klasse
             System.out.println(dice.getId() + " - " + dice.getValue());
         }
     }

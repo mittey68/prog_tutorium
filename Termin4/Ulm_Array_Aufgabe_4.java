@@ -7,7 +7,7 @@ public class Ulm_Array_Aufgabe_4
         // Deklaration und Initialisierung des Scanners
         Scanner scan = new Scanner(System.in);
         /* Ausgabe des Textes auf der Konsole. 
-         * Die Verwendung von print statt printl sorgt dafür, 
+         * Die Verwendung von print statt println sorgt dafür, 
          * dass der Text und der Input des Users in einer Zeile stehen. */
         System.out.print("Amount data: ");
         /* Eingabe eines Integer-Werts über den Scanner und speichern 
@@ -33,20 +33,20 @@ public class Ulm_Array_Aufgabe_4
         do {
             // Kosolenausgabe
             System.out.print("Search for: ");
-            /* Eingabe eines Double-Werts über den Scanner und speichern 
+            /* Eingabe eines Double-Werts über den Scanner (die Zahl nach derer gesucht werden soll) und speichern 
              * in eine Hilfsvariable */
             int search = scan.nextInt();
         
             // for-Schleife mit der Länge des Arrays als Zähler. Identisch zu obriger for-Schleife mit "amount"
             for(int i=0; i<data.length; i++) {
-                /* Wenn das gesuchte Element mit dem aktuell im Schleifendurchlauf angesehen 
-                   Element (data[i]) überinstimmt, setze found auf true, um die Schleife
+                /* Wenn das gesuchte Element mit dem aktuell im Schleifendurchlauf angesehenen 
+                   Element (data[i]) übereinstimmt, setze found auf true, um die Schleife
                    abzubrechen und gib etwas auf der Konsole aus. */ 
                 if(search == data[i]) {
                     found = true;
                     System.out.println("Found");
                 }
             }
-        }while(!found);
+        }while(!found); // !found entspricht found == false
     }
 }

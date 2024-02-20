@@ -13,9 +13,9 @@ public class Ulm_Array_Aufgabe_2_2
         /* Erstellen der ArrayList
            ArrayList<Double>: Festlegen des Datentyps, den die ArrayList aufnimmt
            values: Name der ArrayList
-           new ArrayList<>(): Erzeugen der ArrayList durch den new-Operator*/ 
+           new ArrayList<>(): Erzeugen der ArrayList durch den new-Operator */ 
         ArrayList<Double> values = new ArrayList<>();
-        // Do-While Schleife, um so viele Eingaben, wie man möchte, zu ermöglichen.
+        // Do-While Schleife, um so viele Eingaben zu ermöglichen, wie man möchte
         do{
             // Konsolenausgabe
             System.out.print(values.size() + 1 + ". Value: ");
@@ -25,8 +25,9 @@ public class Ulm_Array_Aufgabe_2_2
             // Konsolenausgabe
             System.out.print("Do you wanna scan again? (y/n)");
             /* Wenn der erste Buchstabe der Eingabe y ist, wird die Schleife wiederholt,
-               ansonsten bricht sie ab
-               toLowerCase() macht aus allen Buchstaben des Strings Kleinbuchstaben
+               ansonsten bricht sie ab (again = false --> Abbruch)
+               toLowerCase() macht aus allen Buchstaben des Strings Kleinbuchstaben (so könnte man auch ein 'Y' eingeben 
+               und der Vergleich mit einem 'y' würde "wahr" ergeben)
                charAt(0) extrahiert den ersten Buchstaben des eingegebenen Strings */
             if(scan.next().toLowerCase().charAt(0) != 'y'){
                 again = false;
@@ -35,7 +36,7 @@ public class Ulm_Array_Aufgabe_2_2
         
         // Deklaration einer Hilfsvariable und Initialisierung mit "0"
         double sum = 0;
-        // Schrittweises druchgehen des Arrays und Aufaddierung der Summe
+        // Schrittweises druchgehen des Arrays
         for(int i=0; i<values.size(); i++) {
             // Aufaddieren der i-ten Stelle der ArrayList auf die Summe
             sum += values.get(i);

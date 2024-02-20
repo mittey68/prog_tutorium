@@ -5,15 +5,15 @@ public class Main {
     public static void main(String[] args) {
         /* Erstellen der ArrayList
            ArrayList<Dice>: Festlegen des Datentyps, den die ArrayList aufnimmt (hier die Klasse Dice, 
-           welche wir programmiert haben)
+           welche wir programmiert haben --> eine Liste die Würfel (Objekte der Klasse Dice) speichern kann)
            dices: Name der ArrayList
-           new ArrayList<>(): Erzeugen der ArrayList durch den new-Operator*/
+           new ArrayList<>(): Erzeugen der ArrayList durch den new-Operator */
         ArrayList<Dice> dices = new ArrayList<>();
 
         // for-Schleife, welche 5 Mal durchlaufen wird
         for (int i = 1; i <= 5; i++) {
             /* Erstellen einer Hilfsvariable des Typs "Dice" und Bennenung dieser mit "dice" 
-               Aufruf des in Dice programmierten Konstruktors und Übergabe der Interger-Zählvariable als id (siehe Dice-Klasse)*/
+               Aufruf des in Dice programmierten Konstruktors und Übergabe der Integer-Zählvariable als id (siehe Dice-Klasse)*/
             Dice dice = new Dice(i);
             /* Speichern des eben erstellten Würfels an der nächsten Stelle der oben erstellten ArrayList 
                Die Hilfsvariable "dice" in der Zeile darüber wird in jeder Schleifenausführung überschrieben,
@@ -22,8 +22,8 @@ public class Main {
         }
 
         /* Erstellen eines DiceCups mithilfe des Konstruktors der DiceCup-Klasse 
-           Dies funktioniert auch ohne, dass dieser extra programmiert wurde, da jede Klasse automatische einen 
-           Konstruktor ohne Übergabeparameter hat, welcher alle vorhandenen Attribute der Klasse leer deklariert. */
+           Dies funktioniert auch ohne, dass dieser extra programmiert wurde, da jede Klasse automatische einen "leeren" 
+           Konstruktor ohne Übergabeparameter hat, welcher ein Objekt erzeugt und alle Attribute leer lässt */
         DiceCup diceCup = new DiceCup();
 
         // Konsolenausgabe
