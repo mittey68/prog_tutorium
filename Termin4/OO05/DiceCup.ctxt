@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=DiceCup
-comment1.params=dices
-comment1.target=void\ rollTheDices(java.util.ArrayList)
-comment2.params=dices
-comment2.target=void\ rollTheDices(Dice[])
-numComments=3

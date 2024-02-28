@@ -19,6 +19,7 @@ public class Ulm_Array_Aufgabe_4
            new int[amount]: Erzeugen des Arrays durch den new-Operator und Zuweisung der Länge durch die Variable "amount"*/ 
         int[] data = new int[amount];
         // for-Schleife mit amount als Zähler, da amount der Länge des Arrays entspricht
+        
         for(int i=0; i<amount; i++) {
             // Konsolenausgabe
             System.out.print((i+1)+". Number: ");
