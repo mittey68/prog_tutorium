@@ -18,10 +18,9 @@ public class Product {
         this.priceInEuro = priceInEuro;
     }
 
-    public double getPriceInEuro(){
+    public double getPriceInEuro() {
         return this.priceInEuro;
     }
-
 
     // Weitere Getter-Methoden...
 
@@ -37,5 +36,4 @@ public class Product {
         return this.unit;
     }
 
-    
 }

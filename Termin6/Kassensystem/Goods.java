@@ -7,7 +7,7 @@ public class Goods extends Product {
         super(id, description, unit, priceInEuro);
         this.classOfGoods = classOfGoods;
     }
-    
+
     public ClassOfGoods getClassOfGoods() {
         return this.classOfGoods;
     }

@@ -23,6 +23,4 @@ public class ShoppingCart {
     public List<Item> getItems() {
         return this.items;
     }
-
-    // Weitere Methoden...
 }
