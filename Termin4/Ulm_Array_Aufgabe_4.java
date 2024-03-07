@@ -64,5 +64,7 @@ public class Ulm_Array_Aufgabe_4 {
                 }
             }
         } while (!found); // !found entspricht found == false
+
+        scan.close();
     }
 }

@@ -50,5 +50,7 @@ public class Ulm_Array_Aufgabe_2_2 {
         }
         // Konsolenausgabe
         System.out.println("Sum: " + sum);
+
+        scan.close();
     }
 }

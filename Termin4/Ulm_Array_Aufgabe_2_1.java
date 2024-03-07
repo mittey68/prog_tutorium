@@ -45,5 +45,7 @@ public class Ulm_Array_Aufgabe_2_1 {
         }
         // Konsolenausgabe
         System.out.println("Sum: " + sum);
+
+        scan.close();
     }
 }
