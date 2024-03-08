@@ -38,5 +38,22 @@ public class Main {
 
         // Ausgabe des Gesamtpreises
         cashierSystem.printBon();
+
+        // Abstandzeilen auf der Konsole
+        System.out.println();
+        System.out.println();
+
+        // Einloggen eines anderen Kassierers#
+        cashierSystem.login(2);
+
+        // Erzeugen eines neuen Einkaufswagens
+        cashierSystem.createShoppingCart();
+
+        // Hinzufügen von Artikeln in den Einkaufswagen
+        cashierSystem.addItem(1, 10);
+        cashierSystem.addItem(4, 5);
+
+        // Ausgabe des Gesamtpreises
+        cashierSystem.printBon();
     }
 }
