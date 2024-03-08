@@ -4,7 +4,7 @@ public class Product {
     // Attribute
     private final int id;
     private final String description;
-    private final String unit;
+    private String unit;
     private double priceInEuro;
 
     // Konstruktor
