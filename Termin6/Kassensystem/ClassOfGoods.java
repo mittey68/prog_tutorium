@@ -1,6 +1,8 @@
 package Termin6.Kassensystem;
 
+// Enum-Klasse für die Kategorien der Waren
 public enum ClassOfGoods {
+    // Aufzählungskonstanten
     BAKERY_PRODUCTS("Backwaren"),
 
     DAIRY_PRODUCTS("Milchprodukte"),
@@ -9,13 +11,19 @@ public enum ClassOfGoods {
 
     VEGETABLES("Gemüse");
 
-    // description-Feld und entsprechender Getter
+    // Attribut
     private final String description;
 
+    /*
+     * Konstruktor (Hinweis: Private, da nur innerhalb der Klasse aufgerufen. Das
+     * ist bei Enums aber auch nicht anders möglich --> Enum-Konstanten sind immer
+     * private!)
+     */
     private ClassOfGoods(String description) {
         this.description = description;
     }
 
+    // Getter-Methode
     public String getDescription() {
         return this.description;
     }
